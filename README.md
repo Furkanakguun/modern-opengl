@@ -1,3 +1,5 @@
+![image](https://github.com/Furkanakguun/modern_opengl/assets/45063194/855f218f-1663-4a07-ab44-9b5adc24863b)
+
 Modern OpenGL techniques
 Create Windows and handle output
 Vertex, Fragment and Geometry Shader
