@@ -1,4 +1,4 @@
-Modern OpenGL techniques \n
+Modern OpenGL techniques
 Create Windows and handle output
 Vertex, Fragment and Geometry Shader
 Draw 3D models
