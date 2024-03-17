@@ -22,7 +22,7 @@
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{c48effc6-3398-49c2-95c7-cec4be07772b}</ProjectGuid>
-    <RootNamespace>OpenGLCourseApp</RootNamespace>
+    <RootNamespace>ModernOpenGL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>ModernOpenGL</ProjectName>
   </PropertyGroup>
