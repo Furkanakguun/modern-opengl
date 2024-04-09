@@ -2,12 +2,33 @@
 //
 
 #include <stdio.h>
+#include <string.h>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 
 //Windows Dimension
 const GLint WIDTH = 800, HEIGHT = 600;
+
+GLuint VAO, VBO, shader;
+
+void CreateTriangle()
+{
+	GLfloat vertices[] = {
+			-1.0f, -1.0f, 0.0f,
+			 1.0f, -1.0f, 0.0f,
+		     0.0f,  1.0f, 0.0f
+	};
+
+	glGenVertexArrays(1, &VAO);
+	glBindVertexArray(VAO);
+
+	glGenBuffers(1, &VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices),vertices,GL_STATIC_DRAW); // We are not going to change these
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+}
 
 int main()
 {
