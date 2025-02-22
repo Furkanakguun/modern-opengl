@@ -26,6 +26,44 @@ void main()												\n\
 														\n\
 }";
 
+// Fragment Shader
+static const char* fShader = "								\n\
+#version 330												\n\
+															\n\
+out vec4 colour;											\n\
+															\n\
+layout (location = 0) in vec3 pos;							\n\
+															\n\
+void main()													\n\
+{															\n\
+															\n\
+     colour = vec4(1.0, 0.0, 0.0, 1.0);   \n\
+															\n\
+															\n\
+}";
+
+void AddShader(GLuint theProgram, const char* shaderCode, GLenum shaderType) 
+{
+	return;
+}
+
+
+void CompileShaders() {
+
+	shader = glCreateProgram();
+	
+	if (!shader) {
+		printf("Error creating shader program!\n");
+		return;
+	}
+
+	AddShader(shader, vShader, GL_VERTEX_SHADER);
+	AddShader(shader, fShader, GL_FRAGMENT_SHADER);
+
+	GLint result = 0;
+
+}
+
 void CreateTriangle()
 {
 	GLfloat vertices[] = {
